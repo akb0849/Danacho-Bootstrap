@@ -1,13 +1,15 @@
 import styled from "styled-components";
 import {Instagram} from '@styled-icons/boxicons-logos/Instagram'
 import { Twitter } from "styled-icons/boxicons-logos";
-import {Container, Image,Navbar, NavLink} from 'react-bootstrap'
+import {Container, Navbar, NavLink} from 'react-bootstrap'
+import {Image} from 'antd';
 interface Props{
     isOpen: any
 }
 
 export const Wrapper = styled(Container)`
   display: flex;
+  height: 100px
 `
 export const MenuLink = styled(NavLink)`
   padding-right: 20px;
@@ -24,11 +26,10 @@ export const MenuLink = styled(NavLink)`
     margin-top: 2px;
     margin-left: 5px;
   }
-
 `;
 
 export const Nav = styled(Navbar)`
-    
+
   padding: 0 2rem;
   display: flex;
   justify-content: space-between;
@@ -41,18 +42,15 @@ export const Nav = styled(Navbar)`
   right: 0;
   background-color: #DBE4E6;
   width: 100%;
-
   
-
 `
 
 export const Logo = styled(Image)`
-  padding: 1rem 0;
+  //padding: 1rem 0;
   height: 50px;
   width: 50px;
-  padding-left: 50px;
+  //padding-left: 50px;
   @media(max-width: 760px){
-    padding-left: 10px;
   }
 `
 
@@ -66,6 +64,7 @@ export const Menu = styled(Container)<Props>`
     overflow: hidden;
     flex-direction: column;
     max-height: ${({ isOpen }) => (isOpen ? "300px" : "0")};
+    background-color: inherit;
     transition: max-height 0.3s ease-in;
     width: 100%;
   }
@@ -96,7 +95,9 @@ export const SocialMediaContainer = styled(Container)<Props>`
     width: 95%;
     align-items: center;
     justify-content: center;  
-    margin-top: 5px;
+    padding-top: 5px;
+    background-color: inherit;
+    width: 100vw;
   }
   @media (min-width: 1440px) {
     width: 100px;    

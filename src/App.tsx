@@ -7,7 +7,7 @@ import styled from 'styled-components';
 import Buy from './components/buy/buy';
 import BuyInfo from './components/buyInfo/buyInfo';
 import FAQ from './components/faq/faq';
-
+import Contact from './components/contact/contact'
 function App() {
   return (
    <Wrapper>
@@ -16,6 +16,7 @@ function App() {
       <Buy />
       <BuyInfo />
       <FAQ />
+      <Contact />
    </Wrapper>
     
   );

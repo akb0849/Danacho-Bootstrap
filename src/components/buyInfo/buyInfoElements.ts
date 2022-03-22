@@ -31,6 +31,7 @@ export const InfoWrapper = styled(Container)`
         width: 100vw;       
         height: 100%;
         background-color: inherit;
+        margin-top: 30px;
     } 
 `
 export const InfoContainer = styled(Container)`
@@ -44,6 +45,7 @@ export const InfoContainer = styled(Container)`
         width: 100vw;       
         height: 100%;
         background-color: inherit;
+        
     } 
 `
 
