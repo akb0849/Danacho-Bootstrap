@@ -1,15 +1,20 @@
-import React from 'react'
+/* eslint-disable jsx-a11y/anchor-is-valid */
 
+import { Button } from 'antd';
+import React, { useState } from 'react'
+import Plus from '../../assets/add.png';
+import ArrowDown from '../../assets/upload.png'
 import { CustomCollapsed, Text, Title, Wrapper } from './faqElements'
 
+
 const {Panel} = CustomCollapsed;
- 
 const FAQ = () => {
+  const [open,setOpen] = useState(false)
   return (
     <Wrapper>
       <Title>Frequently Asked Questions</Title>
-      <CustomCollapsed accordion ghost expandIconPosition='right'>
-      <Panel header="1. I can't see my funds. Did I just lose all my Danacho?" key="1">
+      <CustomCollapsed accordion ghost expandIconPosition='right' onChange={()=>setOpen(!open)} expandIcon={() => (open ? <img src={Plus} alt="close-info" /> : <img src={Plus} alt="open-info" />)}>
+        <Panel header="1. I can't see my funds. Did I just lose all my Danacho?" key="1" >
               <Text>
                 You probably didn't. It's very hard to simply 'lose' your tokens, since they are technically nowhere. Your coins 'live' on the blockchain and are linked to your account through a system of public and private keys secured by cryptography. That's why if you don't see your funds, it's probably because of a technical issue. Take a look at the 'Resources & Help' section at the top of this page for a list of useful resources that will help you identify and fix your problem.
               </Text>

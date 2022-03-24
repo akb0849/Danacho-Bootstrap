@@ -34,6 +34,10 @@ export const CustomCollapsed = styled(Collapse)`
     justify-content: flex-start;
     margin-top: 40px;
     padding-left: 40vw;
+    & > img{
+        width: 30px;
+        height: 30px;
+    }
     @media (max-width: 760px) {
         padding-left: 0;
     }
