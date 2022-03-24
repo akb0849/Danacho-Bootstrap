@@ -57,7 +57,6 @@ export const Menu = styled(Container)<Props>`
   justify-content: space-between;
   align-items: center;
   position: relative;
-  width: 150px;
   @media (max-width: 768px) {
     overflow: hidden;
     flex-direction: column;
@@ -90,7 +89,7 @@ export const SocialMediaContainer = styled(Container)<Props>`
     display: ${({ isOpen }) => (isOpen ? "flex" : "none")}; 
     //height: 100%;
     transition: display 0.3s ease-in;
-    width: 95%;
+    //width: 95%;
     align-items: center;
     justify-content: center;  
     padding-top: 5px;

@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { CustomCollapsed, MenuOpener,  Text, Title, Wrapper } from './faqElements'
+import { CustomCollapsed, Text, Title, Wrapper } from './faqElements'
 
 const {Panel} = CustomCollapsed;
  
