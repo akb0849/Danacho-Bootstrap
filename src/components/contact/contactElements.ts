@@ -1,12 +1,11 @@
 import styled from 'styled-components';
 import {Container} from 'react-bootstrap'
 export const Wrapper = styled(Container)`
-height: 100%;
 width: 100%;
 background-color: #6FB1BD;
 display: flex;
 flex-direction: column;
-justify-content: center;
+justify-content: space-between;
 align-items: center;
 `
 
@@ -15,14 +14,14 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-width: 100%
-height: 10%
+width: 100vw;
+//padding-top: 20px;
 `
 
 export const TopContainer = styled(Container)`
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     width: 100%;
 
     @media (max-width: 768px) {
@@ -34,11 +33,12 @@ export const BottomContainer = styled(Container)`
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content:center;
     width: 100%;
     @media (max-width: 768px) {
-        flex-direction: column ;
-    }
+        flex-direction: column;
+        padding-top: 0;
+    }  
 `
 
 export const LeftContainer = styled(Container)`

@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+
+.ant-collapse > .ant-collapse-item > .ant-collapse-header {
+    
+  color: white;
+  border-bottom: none !important;
+  font-size:18px;
+  font-family: "Roboto" !important;
+  font-weight: bold;
+}

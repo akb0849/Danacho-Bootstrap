@@ -3,7 +3,7 @@ import {Container} from 'react-bootstrap'
 
 export const Wrapper = styled(Container)`
 width: 100vw;
-height: 100%;
+//height: 100vh;
 background-color: #6FB1BD;
 
 `
@@ -13,12 +13,10 @@ export const MainContainer = styled(Container)`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100%;
+   // padding-top: 100px;
     @media (max-width: 768px) {
         width: 100vw;       
-        height: 100%;
-        background-color: inherit;
-        margin-top: 20px;
+      
     } 
 `
 export const InfoWrapper = styled(Container)`

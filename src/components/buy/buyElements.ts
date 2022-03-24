@@ -3,24 +3,19 @@ import {Button, Container, Form} from 'react-bootstrap'
 
 export const Wrapper = styled(Container)`
     width: 100vw;
-    height: 100%;
+    padding-top: 10px;
     background-color: #6FB1BD;
-    display: flex;
     align-items: center;
     justify-content: center;
     @media(min-width: 1024px){
-        height: 50vh;
     }
 `
 export const MainContainer = styled(Container)`
-    padding-top: 20px;
     background-color: transparent;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: relative;
-   
 `
 
 export const Title = styled(Container)`

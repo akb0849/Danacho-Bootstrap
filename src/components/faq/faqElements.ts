@@ -7,11 +7,10 @@ import {Plus} from '@styled-icons/boxicons-regular/Plus'
 
 export const Wrapper = styled(Container)`
     width: 100vw;
-    height: 100%;
     background-color: #FBEDB1;
-    position: relative;
+   
     @media (max-width: 768px){
-        margin-top: 150px;
+        
     }
 `
 export const Title = styled(Container)`
@@ -23,8 +22,8 @@ export const Title = styled(Container)`
     padding-top: 20px;
     @media (max-width: 768px){
         font-size: 20px;
+        
     }
-    
 `
 
 export const CustomCollapsed = styled(Collapse)`
@@ -34,9 +33,19 @@ export const CustomCollapsed = styled(Collapse)`
     align-items: flex-start;
     justify-content: flex-start;
     margin-top: 40px;
-    margin-left: 450px;
-    @media (max-width: 768px) {
-        margin-left: 0;        
+    padding-left: 40vw;
+    @media (max-width: 760px) {
+        padding-left: 0;
+    }
+    @media (min-width: 768px ) and (max-width: 900px){
+        padding-left: 20vw;;
+    }
+    @media (min-width: 1024px){
+        padding-left: 35vw;
+    }
+
+    @media  (min-width: 2560px){
+        padding-left: 40vw;
     }
 `
 export const Text = styled.p`

@@ -8,8 +8,6 @@ interface Props{
 }
 
 export const Wrapper = styled(Container)`
-  display: flex;
-  height: 100px
 `
 export const MenuLink = styled(NavLink)`
   padding-right: 20px;
@@ -30,7 +28,7 @@ export const MenuLink = styled(NavLink)`
 
 export const Nav = styled(Navbar)`
 
-  padding: 0 2rem;
+  padding: 0.75rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
