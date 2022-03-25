@@ -1,25 +1,36 @@
 import styled from 'styled-components'
-import {Container} from 'react-bootstrap'
+import {Container, Row, Col} from 'react-bootstrap'
 import { Collapse } from "antd";
 import {Plus} from '@styled-icons/boxicons-regular/Plus'
 
-
+;
 
 export const Wrapper = styled(Container)`
-    width: 100vw;
     background-color: #FBEDB1;
-   
-    @media (max-width: 768px){
-        
-    }
+    justify-content: center;
+
+    
 `
-export const Title = styled(Container)`
+
+export const MainRow = styled(Row)`
+    justify-content: center;
+    align-items: center;
     display: flex;
+    padding-bottom: 80px;
+   
+`
+
+export const MainCol = styled(Col)`
+`
+
+export const Title = styled(Container)`
     align-items: center;
     justify-content: center;
+    text-align: center;
     font-weight: 600;
+    padding-top: 80px;
     font-size: 28px;
-    padding-top: 20px;
+    margin: 0 0 8px;
     @media (max-width: 768px){
         font-size: 20px;
         
@@ -28,40 +39,27 @@ export const Title = styled(Container)`
 
 export const CustomCollapsed = styled(Collapse)`
     background-color: transparent;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
     margin-top: 40px;
-    padding-left: 40vw;
     & > img{
         width: 30px;
         height: 30px;
     }
-    @media (max-width: 760px) {
-        padding-left: 0;
-    }
-    @media (min-width: 768px ) and (max-width: 900px){
-        padding-left: 20vw;;
-    }
-    @media (min-width: 1024px){
-        padding-left: 35vw;
-    }
-
-    @media  (min-width: 2560px){
-        padding-left: 40vw;
-    }
+    
 `
 export const Text = styled.p`
-    background-color: transparent;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0 0 20px;
+    padding-bottom: 25px;
+    line-height: 1.5;
+    padding: 1rem 1.25rem;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 500px;
     font-weight: bold;
+    width: 500px;
     @media (max-width: 768px) {
-        width: 300px ;
+        width: 300px;   
     }
 `
 export const MenuOpener = styled(Plus)`

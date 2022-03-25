@@ -25,6 +25,5 @@ function App() {
 export default App;
 
 const Wrapper = styled(Container)`
-  width: 100vw;
-  height: 100vh;
+  background-color: #6fb1bd!important;
 `

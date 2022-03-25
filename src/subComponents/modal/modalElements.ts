@@ -1,8 +1,6 @@
 import styled from 'styled-components'
 import {Container, Image} from 'react-bootstrap'
 export const Wrapper = styled(Container)`
-    width: 100%;
-    height: 100%;    
     @media (max-width: 768px){
         width: 100vw;      
     }
@@ -13,20 +11,15 @@ export const MainContainer = styled(Container)`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 500px;
-  height: 250px;
-  background-color: white;
+  width: 400px;
   border: 2px solid #000;
-  box-shadow: 24;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border-radius: 25px;
-
-  @media (max-width: 760px) {
-      width: calc(100% - 20px);
-  }
+  height: 300px;
+  padding: 16px 32px 24px;
+  position: absolute;
+  box-shadow: 0px 3px 5px -1px rgb(0 0 0 / 20%), 0px 5px 8px 0px rgb(0 0 0 / 14%), 0px 1px 14px 0px rgb(0 0 0 / 12%);
+  text-align: center;
+  border-radius: 30px 30px 30px 30px;
+  background-color: #fff;
 `
 
 export const ConnectWalletButton = styled(Container)`
@@ -45,20 +38,24 @@ export const Logo = styled(Image)`
     margin-right: 20px;
 `
 export const ConnectButton = styled(Container)`
+   text-align: center;
+    justify-content: center;
+    border-radius: 30px;
+    width: 360px;
+    height: 110px;
+    margin-bottom: 10px;
+    background: linear-gradient(104.78deg,#eec95a,#eec95a 97.02%);
+    box-shadow: inset 2px 2px 4px hsl(0deg 0% 100% / 25%), inset -2px -2px 6px rgb(149 3 3 / 25%);
+    transition: .3s ease-in-out;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 19px;
+    margin-top: 10px;
+    color: #fff;
+    margin-left: -15px;
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 450px;
-    height: 90px;
-    border: 1px solid black;
-    border-radius: 20px;
-    margin-top: 20px;
-    background-color: #EEC95A;
-
-    @media (max-width: 760px) {
-      width: calc(100vw - 100px);
-    }
 
 `
 export const ButtonTitle = styled(Container)`

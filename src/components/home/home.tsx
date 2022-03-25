@@ -1,60 +1,57 @@
 import React from 'react'
-import { MainContainer, Subtitle, Title, Wrapper,TimerCol,TimerContainer,TimerRow,TimerTitle,TimerValue,TimerWrapper } from './homeElements'
+import { EndTitle, MainCol, MainContainer, MainRow, Subtitle, TimerCol, TimerRow, TimerText, TimerValue, Title, Wrapper } from './homeElements'
 
 const Home = () => {
   return (
     <Wrapper>
         <MainContainer>
-          <Title>Welcome to Danacho</Title>
-          <Subtitle>Presale Start Time</Subtitle>
-          <TimerWrapper>
-            <TimerRow>
-              <TimerContainer>
-                <TimerValue>0</TimerValue>
-                <TimerTitle>days</TimerTitle>
-              </TimerContainer>
-              <TimerContainer>
-                <TimerValue>0</TimerValue>
-                <TimerTitle>hours</TimerTitle>
-              </TimerContainer>
-            </TimerRow>
-            <TimerCol>
-              <TimerContainer>
-                <TimerValue>0</TimerValue>
-                <TimerTitle>minutes</TimerTitle>
-              </TimerContainer>
-              <TimerContainer>
-                <TimerValue>0</TimerValue>
-                <TimerTitle>seconds</TimerTitle>
-              </TimerContainer>
-            </TimerCol>
-          </TimerWrapper>
-          <Subtitle>Presale End Time</Subtitle>
-          <TimerWrapper>
-            <TimerRow>
-              <TimerContainer>
-                <TimerValue>0</TimerValue>
-                <TimerTitle>days</TimerTitle>
-              </TimerContainer>
-              <TimerContainer>
-                <TimerValue>0</TimerValue>
-                <TimerTitle>hours</TimerTitle>
-              </TimerContainer>
-            </TimerRow>
-            <TimerCol>
-              <TimerContainer>
-                <TimerValue>0</TimerValue>
-                <TimerTitle>minutes</TimerTitle>
-              </TimerContainer>
-              <TimerContainer>
-                <TimerValue>0</TimerValue>
-                <TimerTitle>seconds</TimerTitle>
-              </TimerContainer>
-            </TimerCol>
-          </TimerWrapper>
+         <MainRow>
+           <MainCol>
+              <Title>Welcome to Danacho</Title>
+              <Subtitle>Presale Start Time</Subtitle>
+              <TimerRow>
+                <TimerCol>
+                    <TimerValue>0</TimerValue>
+                    <TimerText>days</TimerText>
+                </TimerCol>
+                <TimerCol>
+                    <TimerValue>0</TimerValue>
+                    <TimerText>hours</TimerText>
+                </TimerCol>
+                <TimerCol>
+                    <TimerValue>0</TimerValue>
+                    <TimerText>minutes</TimerText>
+                </TimerCol>
+                <TimerCol>
+                    <TimerValue>0</TimerValue>
+                    <TimerText>seconds</TimerText>
+                </TimerCol>
+              </TimerRow>
+              <EndTitle>Presale End Time</EndTitle>
+              <TimerRow>
+                <TimerCol>
+                    <TimerValue>0</TimerValue>
+                    <TimerText>days</TimerText>
+                </TimerCol>
+                <TimerCol>
+                    <TimerValue>0</TimerValue>
+                    <TimerText>hours</TimerText>
+                </TimerCol>
+                <TimerCol>
+                    <TimerValue>0</TimerValue>
+                    <TimerText>minutes</TimerText>
+                </TimerCol>
+                <TimerCol>
+                    <TimerValue>0</TimerValue>
+                    <TimerText>seconds</TimerText>
+                </TimerCol>
+              </TimerRow>
+           </MainCol>
+         </MainRow>
         </MainContainer>
     </Wrapper>
   )
 }
 
 export default Home
+

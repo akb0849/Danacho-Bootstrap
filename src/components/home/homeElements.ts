@@ -1,117 +1,129 @@
-import { Col, Container, Row } from 'react-bootstrap'
-import styled from 'styled-components'
-import bg from '../../assets/banner.png'
+import styled from "styled-components";
+import {Col, Container, Row} from 'reactstrap'
+import background from '../../assets/banner.png'
 
 export const Wrapper = styled(Container)`
-    width: 100%;
-    height: 100vh;
-    background: url(${bg});
-    background-position: 0;
-    background-size: 100vw 100vh;
-    background-repeat:no-repeat;
+    background: url(${background});
+    background-position: 50%;
+    background-repeat: no-repeat!important;
+    background-size: cover;
+    
+    
+
+    @media (min-width: 992px){
+        height: 100vh;
+
+    }
 `
 export const MainContainer = styled(Container)`
-    height: 100vh;
-    width: 100%;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 20px;
-`
-
-export const Title = styled(Container)`
-    color: white;
-    width: 100%;
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-weight: 600;
-    font-size: 64px;
-    @media (max-width: 768px){
-        font-size: 32px;
-        margin-top: 0px;
-    }
-`
-export const Subtitle = styled(Container)`
-    color: white;
-    margin-top: 20px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-weight: 600;
-    font-size:32px;
-    @media (max-width: 768px){
-        margin-top: 5px;
-        font-size: 24px;
-    }
-`
-export const TimerWrapper = styled(Container)`
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 50%;
-    padding-top: 20px;
-    font-weight: 600;
-    font-size: 28px;
-    color: white;
-    
-    @media (max-width: 768px) {
-        flex-direction: column;
-    }
-    @media (min-width: 1440px){
-        width: 40%;
-    }
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
     @media (min-width: 2560px){
-        width: 30%;
+        height: 55%;
+        
     }
-    
-`
-export const TimerContainer = styled(Container)`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    
 `
 
+export const MainRow = styled(Row)`
+    padding: 8rem 0;
+
+`
+
+export const MainCol = styled(Col)`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column!important;
+    
+    @media (min-width: 992px) {
+        flex: 0 0 auto;
+        //width: 100%;
+    }
+`
+export const Title = styled.h1`
+    color: white;
+    font-size: 4rem;
+    color: white;
+    z-index: 99;
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 1rem!important;
+    @media (max-width: 1024px){
+        font-size: 4.2rem;
+    }
+    @media (max-width: 768px){
+        font-size: 3.5rem;
+    }
+    @media (max-width: 320px){
+        font-size: 1.67rem;
+    }
+`
+export const Subtitle = styled.h3`
+    color: rgba(255,255,255,1) !important;
+    margin-bottom: 1rem!important;
+    margin-top: 1rem!important;
+    font-size: calc(1.3rem + .6vw);
+    font-weight: 500;
+    line-height: 1.2;
+    @media (min-width: 1200px){
+        font-size: 1.75rem;
+    }
+`
 export const TimerRow = styled(Row)`
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 100%;   
-   
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
 `
 
 export const TimerCol = styled(Col)`
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
-`
-
-export const TimerValue = styled(Container)`
-    display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
-    
-    @media (max-width: 768px){
-        margin-top: 5px;
-        font-size: 20px;
+    justify-content: space-between;
+    color: white;
+
+    & > span{
+        
+        width: 110px;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 `
 
-export const TimerTitle = styled(Container)`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    @media (max-width: 768px){
-        margin-top: 0px;
-        font-size: 20px;
+export const TimerValue = styled.span`
+    height: 80px;
+    font-size: 35px;
+    margin-bottom: -22px;
+    font-weight: bold;
+`
+
+export const TimerText = styled.span`
+    font-weight: 400;
+    height: 30px;
+    font-size: 19px;
+    color: white;
+    font-family: "Helvetica Neu",Helvetica,"Segoe UI",Arial,sans-serif;
+`
+
+export const EndTitle = styled.h3`
+    color: rgba(255,255,255,1) !important;
+    margin-bottom: 1rem!important;
+    font-size: calc(1.3rem + .6vw);
+    font-weight: 500;
+    line-height: 1.2;
+    @media (min-width: 1200px){
+        font-size: 1.75rem;
     }
 `

@@ -1,25 +1,27 @@
 import styled from "styled-components";
 import {Instagram} from '@styled-icons/boxicons-logos/Instagram'
 import { Twitter } from "styled-icons/boxicons-logos";
-import {Container, Navbar, NavLink} from 'react-bootstrap'
+import {Anchor, Container, Navbar, NavLink} from 'react-bootstrap'
 import {Image} from 'antd';
 interface Props{
     isOpen: any
 }
 
 export const Wrapper = styled(Container)`
+  background: hsla(0,0%,92.9%,.8627450980392157);
 `
-export const MenuLink = styled(NavLink)`
+export const MenuLink = styled(Anchor)`
   padding-right: 20px;
+  //width: 250px;
   padding-left: 0;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
   color: black;
-  font-weight: bold;
   display: flex;
   transition: all 0.3s ease-in;
-  font-size: 1.2rem;
+  font-size: 18px;
+  font-weight: bold;
   @media (max-width: 768px){
     margin-top: 2px;
     margin-left: 5px;
@@ -35,11 +37,16 @@ export const Nav = styled(Navbar)`
   flex-wrap: wrap;
   background: white;
   position: relative;
+  
   top: 0;
   left: 0;
   right: 0;
   background-color: #DBE4E6;
   width: 100%;
+
+  @media (min-width:992px){
+    justify-content: space-evenly;
+  }
   
 `
 
@@ -57,6 +64,7 @@ export const Menu = styled(Container)<Props>`
   justify-content: space-between;
   align-items: center;
   position: relative;
+  
   @media (max-width: 768px) {
     overflow: hidden;
     flex-direction: column;
@@ -103,23 +111,33 @@ export const SocialMediaContainer = styled(Container)<Props>`
 
 export const SocialMediaIcon = styled.a`
   background-color: #399ED9;
-  margin-left: 5px;
-  border-radius:9990px;
+  width: 32px;
+  height: 28px;
+  margin: 0 4px 0 0;
+  padding: 6px;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
   
 `
 
 export const InstaIcon = styled(Instagram)`
-  width: 30px;
-  height: 30px;
+  width: 28px;
+  height: 28px;
   color:white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  ;
 `
 
 export const TwitterIcon = styled(Twitter)`
-  width: 30px;
-  height: 30px;
   color: white;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
 `
